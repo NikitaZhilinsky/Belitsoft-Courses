@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 3</title>
+    <style>
+      .bold-text {
+        font-weight: bold;
+      }
+
+      pre {
+        width: 500px;
+        border: 2px solid #A9A9A9;
+      }
+
+      .examples {
+        display: inline-block;
+      }
+
+      figure {
+        float: left;
+        border: 2px solid #A9A9A9;
+        padding: 10px;
+        margin: 10px 10px 10px 0;
+      }
+
+      img {
+        width: 270px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Теги &lt;figure&gt; и &lt;figcaption&gt;</h1>
+    <hr>
+    <p>Тег <span class="bold-text">&lt;figure&gt;</span> хорош для любого демонстрационного материала, которым можно дополнить содержание документа.<br>
+       Обычно применяется для иллюстраций, фрагментов кода, схем, графиков, диаграмм и др.</p>
+    <p>Каждый такой материал сопровождает разъясняющий комментарий.<br>
+       Для разметки этого комментария используется ещё один тег &mdash; <span class="bold-text">&lt;figcaption&gt;</span></p>
+    <hr>
+    <h2>Пример</h2>
+    <pre>
+      <code>
+  &lt;figure&gt;
+    &lt;img src=&quot;paris.jpg&quot; alt=&quot;Paris&quot; title=&quot;Eiffel Tower&quot;&gt;
+    &lt;figcaption&gt;Eiffel Tower&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;figure&gt;
+    &lt;img src=&quot;london.jpg&quot; alt=&quot;London&quot; title=&quot;Big Ben&quot;&gt;
+    &lt;figcaption&gt;Big Ben&lt;/figcaption&gt;
+  &lt;/figure&gt;
+  &lt;figure&gt;
+    &lt;img src=&quot;sydney.jpg&quot; alt=&quot;Sydney&quot; title=&quot;Sydney Opera House&quot;&gt;
+    &lt;figcaption&gt;Eiffel Tower&lt;/figcaption&gt;
+  &lt;/figure&gt;
+      </code>
+    </pre>
+    <p>Результат данного примера:</p>
+    <div class="examples">
+      <figure>
+        <img src="paris.jpg" alt="Paris" title="Eiffel Tower">
+        <figcaption>Eiffel Tower</figcaption>
+      </figure>
+      <figure>
+        <img src="london.jpg" alt="London" title="Big Ben">
+        <figcaption>Big Ben</figcaption>
+      </figure>
+      <figure>
+        <img src="sydney.jpg" alt="Sydney" title="Sydney Opera House">
+        <figcaption>Eiffel Tower</figcaption>
+      </figure>
+    </div>
+    <hr>
+    <h2>Плюсы и минусы использования</h2>
+    <p>+ Семантика в HTML верстке<br>
+       + Возможность переместить или полностью удалить большой объем за малое время</p>
+    <p>&ndash; Путаница между тегами <span class="bold-text">&lt;figure&gt;</span> и <span class="bold-text">&lt;aside&gt;</span><br>
+       &ndash; Проблемы связанные с использованием <span class="bold-text">&lt;figcaption&gt;</span> и <span class="bold-text">alt</span> у изображений</p>
+  </body>
+</html>
