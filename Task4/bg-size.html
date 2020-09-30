@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 5</title>
+    <style>
+    h1 {
+      font-family: 'PT Sans', sans-serif;
+      font-weight: bold;
+      font-size: 48px;
+      margin-left: 8px;
+    }
+
+    figure {
+      width: 400px;
+      height: 400px;
+      background-image: url(sneakers.jpg);
+      background-repeat: no-repeat;
+      border: 2px solid #000;
+      margin-left: 8px;
+    }
+
+    figcaption {
+      padding: 10px 10px;
+      font-family: 'PT Sans', sans-serif;
+      font-weight: bold;
+      font-size: 24px;
+      color: #fff;
+    }
+
+    .image1 {
+      background-size: 350px 350px; /*В качестве значения используется length:
+                                      размер задается в любых доступных для CSS единицах.
+                                      Первое значение - ширина, второе - высота.*/
+    }
+
+    .image2 {
+      background-size: 95% 75%; /*В качестве значения используются проценты,
+                                  размер расчитывается от родительского элемента.
+                                  Первое значение - ширина, второе - высота.*/
+    }
+
+    .image3 {
+      background-size: auto; /*Сохраняет исходный размер изображения.
+                               Если одно из значений задано, то auto сохранит пропорцию.*/
+    }
+
+    .image4 {
+      background-size: cover; /*Масштабирует под размеры родительского элемента.
+                                Скрывает невидимые участки.*/
+    }
+
+    .image5 {
+      background-size: contain; /*Полностью помещает изображение в элемент, однако
+                                  может потеряться пропорциональность.*/
+    }
+
+    </style>
+  </head>
+  <body>
+    <h1>background-size</h1>
+    <figure class="image1">
+      <figcaption>Length</figcaption>
+    </figure>
+    <figure class="image2">
+      <figcaption>%</figcaption>
+    </figure>
+    <figure class="image3">
+      <figcaption>Auto</figcaption>
+    </figure>
+    <figure class="image4">
+      <figcaption>Cover</figcaption>
+    </figure>
+    <figure class="image5">
+      <figcaption>Contain</figcaption>
+    </figure>
+  </body>
+</html>

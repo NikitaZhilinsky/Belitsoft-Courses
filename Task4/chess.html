@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 7</title>
+    <style>
+      body {
+        background-color: cyan;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        background-color: #ffffff;
+        border: 2px solid #000000;
+      }
+
+      td {
+        width: 48px;
+        height: 48px;
+      }
+
+      tr th:nth-child(n+2):nth-child(-n+9) {
+        padding: 5px 0;
+        border-bottom: 2px solid #000000;
+        border-top: 2px solid #000000;
+      }
+
+      .numbers {
+        padding: 0 5px;
+        border-right: 2px solid #000000;
+        border-left: 2px solid #000000;
+      }
+
+      .black {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+
+      .white {
+        background-color: #ffffff;
+      }
+
+      #a8, #h8 {
+        background-image: url(chess.png);
+        background-position: -96px 0;
+      }
+
+      #b8, #g8 {
+        background-image: url(chess.png);
+        background-position: -192px 0;
+      }
+
+      #c8, #f8 {
+        background-image: url(chess.png);
+        background-position: -144px 0;
+      }
+
+      #d8 {
+        background-image: url(chess.png);
+        background-position: -48px 0;
+      }
+
+      #e8 {
+        background-image: url(chess.png);
+        background-position: 0 0;
+      }
+
+      #a7, #b7, #c7, #d7, #e7, #f7, #g7, #h7 {
+        background-image: url(chess.png);
+        background-position: -240px 0;
+      }
+
+      #a1, #h1 {
+        background-image: url(chess.png);
+        background-position: -96px -48px;
+      }
+
+      #b1, #g1 {
+        background-image: url(chess.png);
+        background-position: -192px -48px;
+      }
+
+      #c1, #f1 {
+        background-image: url(chess.png);
+        background-position: -144px -48px;
+      }
+
+      #d1 {
+        background-image: url(chess.png);
+        background-position: -48px -48px;
+      }
+
+      #e1 {
+        background-image: url(chess.png);
+        background-position: 0 -48px;
+      }
+
+      #a2, #b2, #c2, #d2, #e2, #f2, #g2, #h2 {
+        background-image: url(chess.png);
+        background-position: -240px -48px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Шахматы</h1>
+    <table class="chess-board">
+      <tbody>
+        <tr>
+         <th></th>
+         <th class="letters">a</th>
+         <th class="letters">b</th>
+         <th class="letters">c</th>
+         <th class="letters">d</th>
+         <th class="letters">e</th>
+         <th class="letters">f</th>
+         <th class="letters">g</th>
+         <th class="letters">h</th>
+         <th></th>
+        </tr>
+        <tr>
+         <th class="numbers">8</th>
+         <td class="white" id="a8"></td>
+         <td class="black" id="b8"></td>
+         <td class="white" id="c8"></td>
+         <td class="black" id="d8"></td>
+         <td class="white" id="e8"></td>
+         <td class="black" id="f8"></td>
+         <td class="white" id="g8"></td>
+         <td class="black" id="h8"></td>
+         <th class="numbers">8</th>
+        </tr>
+        <tr>
+         <th class="numbers">7</th>
+         <td class="black" id="a7"></td>
+         <td class="white" id="b7"></td>
+         <td class="black" id="c7"></td>
+         <td class="white" id="d7"></td>
+         <td class="black" id="e7"></td>
+         <td class="white" id="f7"></td>
+         <td class="black" id="g7"></td>
+         <td class="white" id="h7"></td>
+         <th class="numbers">7</th>
+        </tr>
+        <tr>
+         <th class="numbers">6</th>
+         <td class="white" id="a6"></td>
+         <td class="black" id="b6"></td>
+         <td class="white" id="c6"></td>
+         <td class="black" id="d6"></td>
+         <td class="white" id="e6"></td>
+         <td class="black" id="f6"></td>
+         <td class="white" id="g6"></td>
+         <td class="black" id="h6"></td>
+         <th class="numbers">6</th>
+        </tr>
+        <tr>
+         <th class="numbers">5</th>
+         <td class="black" id="a5"></td>
+         <td class="white" id="b5"></td>
+         <td class="black" id="c5"></td>
+         <td class="white" id="d5"></td>
+         <td class="black" id="e5"></td>
+         <td class="white" id="f5"></td>
+         <td class="black" id="g5"></td>
+         <td class="white" id="h5"></td>
+         <th class="numbers">5</th>
+        </tr>
+        <tr>
+         <th class="numbers">4</th>
+         <td class="white" id="a4"></td>
+         <td class="black" id="b4"></td>
+         <td class="white" id="c4"></td>
+         <td class="black" id="d4"></td>
+         <td class="white" id="e4"></td>
+         <td class="black" id="f4"></td>
+         <td class="white" id="g4"></td>
+         <td class="black" id="h4"></td>
+         <th class="numbers">4</th>
+        </tr>
+        <tr>
+         <th class="numbers">3</th>
+         <td class="black" id="a3"></td>
+         <td class="white" id="b3"></td>
+         <td class="black" id="c3"></td>
+         <td class="white" id="d3"></td>
+         <td class="black" id="e3"></td>
+         <td class="white" id="f3"></td>
+         <td class="black" id="g3"></td>
+         <td class="white" id="h3"></td>
+         <th class="numbers">3</th>
+        </tr>
+        <tr>
+         <th class="numbers">2</th>
+         <td class="white" id="a2"></td>
+         <td class="black" id="b2"></td>
+         <td class="white" id="c2"></td>
+         <td class="black" id="d2"></td>
+         <td class="white" id="e2"></td>
+         <td class="black" id="f2"></td>
+         <td class="white" id="g2"></td>
+         <td class="black" id="h2"></td>
+         <th class="numbers">2</th>
+        </tr>
+        <tr>
+         <th class="numbers">1</th>
+         <td class="black" id="a1"></td>
+         <td class="white" id="b1"></td>
+         <td class="black" id="c1"></td>
+         <td class="white" id="d1"></td>
+         <td class="black" id="e1"></td>
+         <td class="white" id="f1"></td>
+         <td class="black" id="g1"></td>
+         <td class="white" id="h1"></td>
+         <th class="numbers">1</th>
+        </tr>
+        <tr>
+         <th></th>
+         <th class="letters">a</th>
+         <th class="letters">b</th>
+         <th class="letters">c</th>
+         <th class="letters">d</th>
+         <th class="letters">e</th>
+         <th class="letters">f</th>
+         <th class="letters">g</th>
+         <th class="letters">h</th>
+         <th></th>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
