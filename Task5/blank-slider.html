@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 9</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+      }
+      h1, p {
+        text-align: center;
+        font-family: 'Open Sans', sans-serif;
+      }
+
+      .slider {
+        height: 425px;
+        width: 1200px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .background {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .caption {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 120px;
+        width: 800px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      hr {
+        width: 550px;
+        border: none;
+        height: 3px;
+        background-color: #ffffff;
+      }
+
+      .uppercase {
+        font-size: 50px;
+        margin: 0;
+      }
+
+      .lowercase {
+        font-size: 30px;
+        margin: 0;
+      }
+
+      .slide-number {
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+      }
+
+      .squares {
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+      }
+
+      li {
+        width: 20px;
+        height: 20px;
+        background-color: #ffffff;
+        margin: 0 10px;
+        list-style-type: none;
+      }
+
+      a {
+        display: block;
+        height: 20px;
+      }
+
+      a:hover {
+        background-color: #ffa500;
+      }
+
+      a.arrow-left {
+        position: absolute;
+        display: block;
+        height: 425px;
+        width: 150px;
+      }
+
+      a.arrow-right {
+        position: absolute;
+        right: 0;
+        display: block;
+        height: 425px;
+        width: 150px;
+      }
+
+      a.arrow-left:hover, a.arrow-right:hover {
+        background-color: transparent;
+      }
+
+      .arrow-left-icon {
+        position: absolute;
+        width: 35px;
+        height: 58px;
+        top: 183px;
+        left: 40px;
+        background: url('blank slider images/prev-next-sprite.png');
+      }
+
+      .arrow-right-icon {
+        position: absolute;
+        width: 35px;
+        height: 58px;
+        top: 183px;
+        right: 40px;
+        background: url('blank slider images/prev-next-sprite.png') -35px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <h1>Верстка заготовки для слайдера</h1>
+    <div class="slider">
+      <img src="blank slider images/slider-img-01.jpg" alt="Basketball" class="background">
+      <div class="caption">
+        <hr>
+        <p class="uppercase">КОМФОРТНАЯ ОДЕЖДА</p>
+        <hr>
+        <p class="lowercase">для всех видов спорта</p>
+      </div>
+      <div class="slide-number">
+        <ul class="squares">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+      <a href="#" class="arrow-left"></a>
+      <a href="#" class="arrow-right"></a>
+      <div class="arrow-left-icon">
+      </div>
+      <div class="arrow-right-icon">
+      </div>
+    </div>
+  </body>
+</html>
