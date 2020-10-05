@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 12</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #00ffff;
+      }
+
+      .block {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        margin: 50px auto;
+      }
+
+      @media screen and (max-width: 1279px) {
+        .block {
+          background-color: red;
+        }
+      }
+
+      @media screen and (max-width: 1023px) {
+        .block {
+          border-radius: 50px;
+        }
+      }
+
+      @media screen and (max-width: 767px) {
+        .block {
+          background-color: yellow;
+        }
+      }
+
+      @media screen and (max-width: 639px) {
+        .block {
+          border: 2px solid red;
+        }
+      }
+
+      @media screen and (max-width: 479px) {
+        .block {
+          border-radius: 50%;
+        }
+      }
+
+      @media screen and (max-width: 319px) {
+        .block {
+          border-radius: 0;
+          border: 0;
+          width: 100%;
+          margin-top: 0;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="block">
+
+    </div>
+  </body>
+</html>
