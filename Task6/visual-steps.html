@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 11</title>
+    <style>
+      .steps {
+        position: relative;
+        left: 50px;
+        top: 50px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        font-size: 22px;
+        font-family: sans-serif;
+      }
+
+      li {
+        list-style: none;
+        background-color: #cccccc;
+        margin-right: 55px;
+        border-radius: 50%;
+        border: 3px solid #cccccc;
+      }
+
+      a {
+        text-decoration: none;
+        display: block;
+        border-radius: 50%;
+        color: #000000;
+        padding: 15px 22px;
+      }
+
+      .complited {
+        color: #ffffff;
+        background-color: #bdde38;
+      }
+
+      a:hover {
+        color: #ffffff;
+        background-color: #ab4a9c;
+      }
+
+      .stripe {
+        position: absolute;
+        width: 450px;
+        top: 31px;
+        left: 74px;
+        z-index: -1;
+        border: 2px solid #cccccc;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="steps">
+      <ul>
+        <li class="complited"><a href="#">1</a></li>
+        <li class="complited"><a href="#">2</a></li>
+        <li class="complited"><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+      </ul>
+      <div class="stripe">
+      </div>
+    </div>
+  </body>
+</html>
