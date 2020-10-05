@@ -1,0 +1,45 @@
+body {
+  background-color: #00ffff;
+}
+
+.content {
+  border: 50px solid transparent;
+  border-image-source: url("images/ramka.png");
+  border-image-slice: 118 130;
+  border-image-repeat: stretch;
+  border-image-width: 100px;
+  padding: 0 15px;
+  background-color: #fff;
+}
+
+.combination {
+  border: 4px solid green;
+  padding: 20px;
+}
+
+.card1, .card2, .card3, .card4, .card5 {
+  display: inline-block;
+  width: 140px;
+  height: 190px;
+  background-image: url("images/cards2.png");
+}
+
+.card1 {
+  background-position: 0 384px;
+}
+
+.card2 {
+  background-position: -144px 579px;
+}
+
+.card3 {
+  background-position: 286px 773px;
+}
+
+.card4 {
+  background-position: 140px 967px;
+}
+
+.card5 {
+  background-position: -144px 1161px;
+}

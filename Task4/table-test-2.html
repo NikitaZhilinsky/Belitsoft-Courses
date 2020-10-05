@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 7</title>
+    <style>
+      .table-1 {
+        border: 3px solid blue;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      .table-1 th {
+        color: #ffffff;
+        background-color: #888888;
+        padding: 5px;
+      }
+
+      .table-1 td {
+        border: 3px solid blue;
+        padding: 5px;
+      }
+
+      .table-1 td:nth-last-child(1),
+      .table-1 td:nth-last-child(2) {
+        text-align: center;}
+
+      .center-text {
+        text-align: center;
+      }
+
+      .right-text {
+        text-align: right;
+      }
+
+      .figure, .flowers, .tree {
+        margin: 20px auto;
+        border-collapse: collapse;
+      }
+
+      .figure td {
+        width: 30px;
+        height: 30px;
+      }
+
+      .figure .red {
+        background-color: #ff0000;
+        border-color: #ff0000;
+      }
+
+      .figure .green {
+        background-color: #7fff00;
+        border-color: #7fff00;
+      }
+
+      .flowers td {
+        width: 20px;
+        height: 20px;
+      }
+
+      .flowers .deep-pink {
+        background-color: #ff1493;
+        border-color: #ff1493;
+      }
+
+      .flowers .lavender-magenta {
+        background-color: #ee82ee;
+        border-color: #ee82ee;
+      }
+
+      .flowers .hot-pink {
+        background-color: #ff69b4;
+        border-color: #ff69b4;
+      }
+
+      .flowers .light-pink {
+        background-color: #ffb6c1;
+        border-color: #ffb6c1;
+      }
+
+      .flowers .forest-green {
+        background-color: #228022;
+        border-color: #228022;
+      }
+
+      .flowers .medium-sea-green {
+        background-color: #3cb371;
+        border-color: #3cb371;
+      }
+
+      .flowers .lime-green {
+        background-color: #32cd32;
+        border-color: #32cd32;
+      }
+
+      .flowers .green {
+        background-color: #00ff00;
+        border-color: #00ff00;
+      }
+
+      .tree {
+        width: 330px;
+        height: 510px;
+      }
+
+      .tree td {
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+      }
+
+      .tree .black {
+        background-color: #000000;
+        border-color: #000000;
+      }
+
+      .tree .ao {
+        background-color: #008000;
+        border-color: #008000;
+      }
+
+      .tree .sea-green {
+        background-color: #2e8b57;
+        border-color: #2e8b57;
+      }
+
+      .tree .medium-sea-green {
+        background-color: #3cb371;
+        border-color: #3cb371;
+      }
+
+      .tree .lime-green {
+        background-color: #32cd32;
+        border-color: #32cd32;
+      }
+
+      .tree .saddle-brown {
+        background-color: #8b4513;
+        border-color: #8b4513;
+      }
+
+      .tree .dark-golden {
+        background-color: #b8860b;
+        border-color: #b8860b;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table-1">
+      <thead>
+        <tr>
+          <th>Название1</th>
+          <th>Название2</th>
+          <th>Еще название</th>
+          <th>Куча элементов</th>
+          <th>Список1</th>
+          <th>Список2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="11" class="center-text">JPMC</td>
+          <td rowspan="5">CST</td>
+          <td rowspan="3">CT</td>
+          <td>ADS</td>
+          <td>1</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>BTO</td>
+          <td>1</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>CSI</td>
+          <td>3</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="center-text">VCT</td>
+          <td>ADS</td>
+          <td>4</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>BTO</td>
+          <td>5</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="right-text">Sub Total</td>
+          <td>6</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td rowspan="4">CST</td>
+          <td rowspan="3">CT</td>
+          <td>ADS</td>
+          <td>7</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td>BTO</td>
+          <td>8</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>CSI</td>
+          <td>9</td>
+          <td>16</td>
+        </tr>
+        <tr>
+          <td class="center-text">VCT</td>
+          <td>ADS</td>
+          <td>10</td>
+          <td>10</td>
+        </tr>
+        <tr>
+          <td colspan="3" class="right-text">Sub Total</td>
+          <td>11</td>
+          <td>15</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="figure">
+      <tbody>
+        <tr>
+          <td class="red"></td>
+          <td></td>
+          <td class="red"></td>
+          <td class="green"></td>
+          <td class="red"></td>
+          <td></td>
+          <td class="red"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="red"></td>
+          <td class="green"></td>
+          <td></td>
+          <td class="green"></td>
+          <td class="red"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="red"></td>
+          <td class="green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="green"></td>
+          <td class="red"></td>
+        </tr>
+        <tr>
+          <td class="green"></td>
+          <td></td>
+          <td></td>
+          <td class="red"></td>
+          <td></td>
+          <td></td>
+          <td class="green"></td>
+        </tr>
+        <tr>
+          <td class="red"></td>
+          <td class="green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="green"></td>
+          <td class="red"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="red"></td>
+          <td class="green"></td>
+          <td></td>
+          <td class="green"></td>
+          <td class="red"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="red"></td>
+          <td></td>
+          <td class="red"></td>
+          <td class="green"></td>
+          <td class="red"></td>
+          <td></td>
+          <td class="red"></td>
+        </tr>
+     </tbody>
+    </table>
+
+    <table class="flowers">
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="forest-green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="forest-green"></td>
+          <td class="medium-sea-green"></td>
+          <td class="forest-green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="hot-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="forest-green"></td>
+          <td class="medium-sea-green"></td>
+          <td  class="lime-green"></td>
+          <td class="medium-sea-green"></td>
+          <td class="forest-green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="hot-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="hot-pink"></td>
+          <td class="light-pink"></td>
+          <td class="hot-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td class="forest-green"></td>
+          <td class="medium-sea-green"></td>
+          <td class="lime-green"></td>
+          <td class="green"></td>
+          <td class="lime-green"></td>
+          <td class="medium-sea-green"></td>
+          <td class="forest-green"></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="hot-pink"></td>
+          <td class="light-pink"></td>
+          <td class="hot-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="hot-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="forest-green"></td>
+          <td class="medium-sea-green"></td>
+          <td  class="lime-green"></td>
+          <td class="medium-sea-green"></td>
+          <td class="forest-green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="hot-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="forest-green"></td>
+          <td class="medium-sea-green"></td>
+          <td class="forest-green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td class="lavender-magenta"></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="forest-green"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="deep-pink"></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="tree">
+      <tr>
+        <td colspan="5" class="black"></td>
+        <td class="ao"></td>
+        <td colspan="5" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="black"></td>
+        <td colspan="3" class="sea-green"></td>
+        <td colspan="4" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="black"></td>
+        <td colspan="5" class="medium-sea-green"></td>
+        <td colspan="3" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="black"></td>
+        <td colspan="7" class="lime-green"></td>
+        <td colspan="2" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="black"></td>
+        <td colspan="3"  class="ao"></td>
+        <td colspan="4" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="black"></td>
+        <td colspan="5" class="sea-green"></td>
+        <td colspan="3" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="black"></td>
+        <td colspan="7" class="medium-sea-green"></td>
+        <td colspan="2" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="black"></td>
+        <td colspan="9" class="lime-green"></td>
+        <td colspan="1" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="3" class="black"></td>
+        <td colspan="5" class="ao"></td>
+        <td colspan="3" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="2" class="black"></td>
+        <td colspan="7" class="sea-green"></td>
+        <td colspan="2" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="1" class="black"></td>
+        <td colspan="9" class="medium-sea-green"></td>
+        <td colspan="1" class="black"></td>
+      </tr>
+      <tr>
+        <td colspan="11" class="lime-green"></td>
+      </tr>
+
+      <tr>
+        <td colspan="4" rowspan="5" class="black"></td>
+        <td rowspan="5" class="saddle-brown"></td>
+        <td rowspan="5" class="dark-golden"></td>
+        <td rowspan="5" class="saddle-brown"></td>
+        <td colspan="4" rowspan="5" class="black"></td>
+      </tr>
+
+    </table>
+  </body>
+</html>
