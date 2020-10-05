@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 11</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: sans-serif;
+        color: #676767;
+        background-color: #cfcfcf;
+      }
+
+      .question-block {
+        position: relative;
+        left: 100px;
+        top: 15px;
+        width: 600px;
+        border: 2px solid #676767;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .question-title, .answer-title {
+        margin-bottom: 10px;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+
+      .question-block::before {
+        content: url("images/user1.jpg");
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 10px solid #ffffff;
+        border-radius: 6px;
+        left: -82px;
+        top: -2px;
+      }
+
+      .question-block::after {
+        content: "";
+        position: absolute;
+        height: 350px;
+        width: 1px;
+        border-right: 2px solid #676767;
+        left: -48px;
+        top: 35px;
+        z-index: -1;
+      }
+
+      .answer-block {
+        position: relative;
+        top: 15px;
+        left: 180px;
+        width: 544px;
+
+      }
+
+      .answer-user1, .answer-user2, .answer-user3 {
+        position: relative;
+        border: 2px solid #676767;
+        border-radius: 8px;
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+      }
+
+      .answer-user1::before, .answer-user2::before, .answer-user3::before {
+        content: url("images/user1.jpg");
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        border: 10px solid #ffffff;
+        border-radius: 6px;
+        left: -82px;
+        top: -2px;
+      }
+
+      .answer-user1::before {
+        content: url("images/user2.jpg");
+      }
+
+      .answer-user2::before {
+        content: url("images/user3.jpg");
+      }
+
+      .answer-user3::before {
+        content: url("images/user4.jpg");
+      }
+
+      .answer-user1::after, .answer-user2::after, .answer-user3::after {
+        content: "";
+        position: absolute;
+        width: 56px;
+        height: 50px;
+        border-left: 2px solid #676767;
+        border-bottom: 2px solid #676767;
+        top: -20px;
+        left: -127px;
+        z-index: -1;
+      }
+
+      .answer-title::before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #676767;
+        border-bottom: 2px solid #676767;
+        transform: rotate(-45deg);
+        top: 25px;
+        left: -96px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="question-block">
+      <p class="question-title"><span class="bold">User111</span> спрашивает:</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat? </p>
+    </div>
+    <div class="answer-block">
+      <div class="answer-user1">
+        <p class="answer-title"><span class="bold">User222</span> отвечает:</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur.</p>
+      </div>
+      <div class="answer-user2">
+        <p class="answer-title"><span class="bold">User333</span> отвечает:</p>
+        <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="answer-user3">
+        <p class="answer-title"><span class="bold">User333</span> отвечает:</p>
+        <p>Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor. Duis aute irure dolor
+          in reprehenderit in voluptate velit esse cillum dolore eufugiat nulla pariatur. Lorem ipsum dolor Lorem ipsum dolor
+          Lorem ipsum dolor. Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor. Lorem ipsum dolor Lorem ipsum dolor Lorem ipsum dolor.</p>
+      </div>
+    </div>
+  </body>
+</html>
