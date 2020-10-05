@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 10</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #808080;
+        color: #ffffff;
+        font-family: sans-serif;
+      }
+
+      p {
+        text-align: center;
+        font-size: 40px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0;
+        background-color: #2d2d2d;
+        margin: 10px 10px 0;
+      }
+
+      li {
+        list-style: none;
+        background-color: #2d2d2d;
+        position: relative;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: #ffffff;
+        padding: 10px 16px;
+      }
+
+      .main::before, .about::before, .portfolio::before, .blog::before, .contacts::before {
+        content: "";
+        float: left;
+        width: 18px;
+        height: 18px;
+        margin-right: 4px;
+        background-image: url(images/css_sprites.png);
+      }
+
+      .main::before {
+        background-position: -81px -10px;
+      }
+
+      .about::before {
+        background-position: -6px -10px;
+      }
+
+      .portfolio::before {
+        background-position: -45px -10px;
+      }
+
+      .blog::before {
+        background-position: -8px -43px;
+      }
+
+      .contacts::before {
+        background-position: -43px -45px;
+      }
+
+      a:hover {
+        background-color: #3f6595;
+      }
+
+      ul li ul {
+        position: absolute;
+        display: block;
+        margin: 0;
+      }
+
+      ul li ul li {
+        width: 157px;
+        background-color: #ffffff;
+        display: none;
+      }
+
+      ul li:hover ul li {
+        display: block;
+      }
+
+      ul li ul li a {
+        color: #808080;
+      }
+
+      ul li ul li:hover {
+        border-left: 3px solid #3f6595;
+        width: 154px;
+      }
+
+      ul li ul li a:hover {
+        background-color: #c6c6c6;
+      }
+
+      ul li ul li ul {
+        position: absolute;
+        top: 0;
+        right: -157px;
+        display: none;
+      }
+
+      ul li ul li:hover ul {
+        display: block;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p>Много-уровневое горизонтальное меню</p>
+    <nav>
+      <ul class="navibar">
+        <li><a href="#" class="main">Главная</a>
+          <ul>
+            <li><a href="#">Подменю 1</a></li>
+            <li><a href="#">Подменю 2</a></li>
+            <li><a href="#">Подменю 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="about">О нас</a></li>
+        <li><a href="#" class="portfolio">Портфолио</a>
+          <ul>
+            <li><a href="#">Подменю 1</a></li>
+            <li><a href="#">Уровень 3 меню</a>
+              <ul>
+                <li><a href="#">Подменю 4</a></li>
+                <li><a href="#">Подменю 5</a></li>
+                <li><a href="#">Подменю 6</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#" class="blog">Блог</a></li>
+        <li><a href="#" class="contacts">Контакты</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 11</title>
+    <style>
+      /*Через box-shadow*/
+
+      /*.border {
+        margin: 150px auto;
+        width: 548px;
+        height: 368px;
+        border: 12px solid #285153;
+        box-shadow: 6px 6px #4c5966, 12px 12px #808485;
+      }*/
+
+      /*Через :before, :after*/
+
+      .border {
+        border: 12px solid #285153;
+        position: relative;
+        left: 50px;
+        top: 50px;
+        display: block;
+        width: 548px;
+        height: 368px;
+      }
+
+      .border::before {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 560px;
+        height: 380px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: #4c5966;
+        top: -8px;
+        left: -8px;
+        z-index: -1;
+      }
+
+      .border::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 564px;
+        height: 384px;
+        border-width: 8px;
+        border-style: solid;
+        border-color: #808485;
+        top: -4px;
+        left: -4px;
+        z-index: -2;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="border">
+      <img src="images/honda.jpg" alt="Motorcycle">
+    </div>
+  </body>
+</html>
