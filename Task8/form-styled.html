@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 13</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+      body {
+        margin: 0;
+        background-color: grey;
+        font-family: 'Roboto', sans-serif;
+      }
+
+      .form {
+        margin: 15px auto;
+        border: 3px solid #7099f8;
+        border-radius: 15px;
+        background-color: #ffffff;
+        width: 650px;
+      }
+
+      h1 {
+        text-align: center;
+        background-color: #7099f8;
+        border-radius: 12px 12px 0 0;
+        color: #ffffff;
+        font-weight: normal;
+        margin: 0;
+        padding: 18px 0;
+      }
+
+      h1::before {
+        content: url("img/home.png");
+        position: relative;
+        left: -2px;
+        top: 2px;
+      }
+
+      p {
+        margin-bottom: 5px;
+        font-weight: 600;
+        font-size: 90%;
+        color: #606061;
+      }
+
+      .content {
+        padding: 0 20px 15px;
+      }
+
+      .name, .email, .telephone {
+        width: 546px;
+        padding: 10px 30px;
+        border: 2px solid #858585;
+        border-radius: 7px;
+        font-size: 110%;
+      }
+
+      .name {
+        background: url("img/user.png") 4px/25px no-repeat;
+      }
+
+      .email {
+        background: url("img/letter.png") 4px 10px/25px no-repeat;
+      }
+
+      .telephone {
+        background: url("img/smartphone.png") 2px/27px no-repeat;
+      }
+
+      textarea {
+        width: 546px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 110%;
+        padding: 10px 30px;
+        border: 2px solid #858585;
+        border-radius: 7px;
+        background: url("img/pen.png") 3px 3px/27px no-repeat;
+      }
+
+      input:focus, textarea:focus {
+        outline: 0;
+        border: 2px solid #7099f8;
+      }
+
+      .button {
+        color: #ffffff;
+        background-color: #7099f8;
+        border: 1px solid #7099f8;
+        border-radius: 7px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 110%;
+        padding: 10px;
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+      }
+
+      .modified .name, .modified .email, .modified .telephone {
+        width: 300px;
+        margin: 10px 110px 0px 40px;
+      }
+
+      .modified .info {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="form">
+      <header>
+        <h1>Обратная связь</h1>
+      </header>
+      <div class="content"> <!--Замена на <div class="content modified"> изменит форму-->
+        <div class="info">
+        <p>Имя:</p>
+        <input type="text" name="name" placeholder="Введите ваше имя" class="name">
+        <p>Ваш email:</p>
+        <input type="text" name="email" placeholder="Введите адрес Вашей почты" class="email">
+        <p>Ваш телефон:</p>
+        <input type="tel" name="telephone" placeholder="Введите номер телефона" class="telephone">
+        </div>
+        <p>Сообщение:</p>
+        <textarea name="message" rows="8" cols="70" placeholder="Текст сообщения ..."></textarea>
+        <p><input type="button" name="button to send" value="Отправить" class="button"></p>
+      </div>
+    </div>
+  </body>
+</html>
