@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 15</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #f8f8f8;
+        font-family: sans-serif;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 15px 0 5px;
+      }
+
+      .content {
+        margin: 50px auto;
+        width: 700px;
+        background-color: #ffffff;
+        box-shadow: 5px 5px 5px -4px grey;
+        padding: 30px 20px 50px;
+      }
+
+      .scale {
+        position: relative;
+        width: 700px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #eeeeee;
+        box-shadow: inset -1px 1px 2px grey;
+      }
+
+      .html {
+        position: absolute;
+        width: 0px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #f5b960;
+        animation: increace-html 1.5s forwards;
+      }
+
+      @keyframes increace-html {
+        to {
+          width: 500px;
+        }
+      }
+
+      .css {
+        width: 0px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #9077c8;
+        animation: increace-css 1.5s forwards;
+      }
+
+      @keyframes increace-css {
+        to {
+          width: 400px;
+        }
+      }
+
+      .js {
+        width: 0px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #df5e56;
+        animation: increace-js 1.5s forwards;
+      }
+
+      @keyframes increace-js {
+        to {
+          width: 300px;
+        }
+      }
+
+      .jq {
+        width: 0px;
+        height: 20px;
+        border-radius: 20px;
+        background-color: #79b872;
+        animation: increace-jq 1.5s forwards;
+      }
+
+      @keyframes increace-jq {
+        to {
+          width: 200px;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <p>Мои знания:</p>
+      <div class="progress">
+        <p>HTML</p>
+        <div class="scale">
+          <div class="html">
+          </div>
+        </div>
+      </div>
+      <div class="progress">
+        <p>CSS</p>
+        <div class="scale">
+          <div class="css">
+          </div>
+        </div>
+      </div>
+      <div class="progress">
+        <p>JavaScript</p>
+        <div class="scale">
+          <div class="js">
+          </div>
+        </div>
+      </div>
+      <div class="progress">
+        <p>jQuery</p>
+        <div class="scale">
+          <div class="jq">
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

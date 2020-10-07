@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 15</title>
+    <style>
+      .content {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .button_1, .button_2, .button_3, .button_4, .button_5 {
+        width: 120px;
+        height: 40px;
+        margin: 10px 0 10px;
+      }
+
+      .button_1:hover, .button_2:hover, .button_3:hover, .button_4:hover, .button_5:hover {
+        cursor: pointer;
+      }
+
+      .button_1:focus, .button_2:focus, .button_3:focus, .button_4:focus, .button_5:focus {
+        outline: none;
+      }
+
+      .button_1 {
+        color: #f2f2f2;
+        font-weight: 600;
+        background-color: #06a5ea;
+        border: 2px solid #0685bc;
+      }
+
+      .button_1:hover {
+        color: #ffffff;
+        background-color: #2cb6f2;
+        transition: 0.5s;
+      }
+
+      .button_1:active {
+        outline: none;
+        color: #06a5ea;
+        background-color: #f2f2f2;
+      }
+
+      .button_2 {
+        color: #000;
+        background-color: #ff579a;
+        border-radius: 7px;
+      }
+
+      .button_2:hover {
+        background: linear-gradient(to top, #ff579a 20%, #ff247b 50%, #cc0052 80%)
+      }
+
+      .button_3 {
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        color: #444444;
+        font-family: cursive;
+        height: 22px;
+        padding: 10px 20px 10px;
+        background-color: #ffa500;
+        border-bottom: 4px solid grey;
+        border-radius: 120px;
+      }
+
+      .button_3:hover {
+        transition: 0.2s;
+        background: linear-gradient(to top left, #ffa500, #fff024);
+
+      }
+
+      .button_3:active {
+        border: none;
+        top: 4px;
+
+      }
+
+      .button_4 {
+        display: block;
+        position: absolute;
+        top: 190px;
+        left: 8px;
+        font-size: 23px;
+        width: 80px;
+        height: 67px;
+        text-align: center;
+        padding-top: 13px;
+        border-radius: 50%;
+        background: radial-gradient(circle at 20px 20px, #ffffff, #bdbdbd);
+        border: 1px solid black;
+      }
+
+      .button_4:hover {
+        transition: 0.5s;
+        box-shadow: 4px 4px 7px black;
+
+      }
+
+      .button_4:active {
+        top: 197px;
+        left: 10px;
+        transform: rotate(7deg);
+      }
+
+      .button_5 {
+        position: absolute;
+        top: 295px;
+        left: 12px;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+        height: 25px;
+        padding: 15px 10px;
+        background-color: #383838;
+        color: #ffffff;
+      }
+
+      .button_5:hover {
+        transition: 0.3s;
+        box-shadow: 0px 0px 10px 10px #23f906;
+        color: #ebebeb;
+        text-shadow: 3px 3px 10px #23f906;
+      }
+
+      .button_5:active {
+        box-shadow: 0px 0px 10px 10px #fc38ff;
+        text-shadow: 3px 3px 10px #fc38ff;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <input type="button" name="button" value="Click on me" class="button_1">
+      <button type="button" name="button" class="button_2">Click!</button>
+      <a href="#" class="button_3">Click me, pls!</a>
+      <span class="button_4">Click<br>Click</span>
+      <a href="#" class="button_5">I am button</a>
+    </div>
+  </body>
+</html>
