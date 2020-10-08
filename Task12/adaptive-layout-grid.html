@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Folder 16</title>
+    <style>
+      body {
+          margin: 0;
+          font-family: sans-serif;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        background-color: #00bfff;
+        font-weight: 600;
+      }
+
+      .logo {
+        background-color: grey;
+        color: white;
+        padding: 0px 50px;
+      }
+
+      .nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-self: end;
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        background-color: #00bfff;
+      }
+
+      li {
+        padding: 15px 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      main {
+        display: grid;
+        grid-template-columns: 1fr 4fr 1fr;
+      }
+
+      .type1 {
+        background-color: #ffd700;
+        text-align: center;
+      }
+
+      section {
+        background-color: #00ffff;
+        padding: 0 10px;
+      }
+
+      .type2 {
+        background-color: #ff69b4;
+        text-align: center;
+      }
+
+      footer {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        background-color: #90ee90;
+        font-weight: 600;
+      }
+
+      .mark {
+        padding: 5px 10px;
+        font-size: 80%;
+      }
+
+      .social {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-self: end;
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      @media screen and (max-width: 760px) {
+        header, footer {
+          grid-template-rows: auto 1fr;
+          grid-template-columns: 1fr;
+        }
+
+        .nav, .social {
+          justify-self: stretch;
+        }
+
+        .logo, .mark {
+          text-align: center;
+        }
+
+        main {
+          grid-template-columns: 1fr 1fr;
+        }
+
+        section {
+          order: -1;
+          grid-column: 1/3;
+        }
+      }
+
+      @media screen and (max-width: 375px) {
+        .nav {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
+
+        .social {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        li {
+          border-top: 1px solid #4dd3ff;
+          border-bottom: 1px solid #00abe5;
+        }
+
+        main {
+          grid-template-columns: 1fr;
+          grid-template-rows: auto 1fr 1fr;
+        }
+
+        .socitem {
+          border-top: 1px solid #b1f3b1;
+          border-bottom: 1px solid #81d581;
+        }
+
+        .type1 {
+          grid-row: 2;
+        }
+
+        .type2 {
+          grid-row: 3;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <p>Logo</p>
+      </div>
+      <ul class="nav">
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">О нас</a></li>
+        <li><a href="#">Продукты</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+    </header>
+    <main>
+      <aside class="type1">
+        <p>Aside type 1</p>
+      </aside>
+      <section>
+        <h1>What is Lorem Ipsum?</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
+          in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <h2>Why do we used it?</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+          nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+          esse cillum dolore eu fugiat nulla pariatur.</p>
+      </section>
+      <aside class="type2">
+        <p>Aside type 2</p>
+      </aside>
+    </main>
+    <footer>
+      <div class="mark">
+        <p>&copy; Copyright 2017</p>
+      </div>
+      <ul class="social">
+        <li class="socitem"><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        <li class="socitem"><a href="https://vk.com" target="_blank">Vkontakte</a></li>
+        <li class="socitem"><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
